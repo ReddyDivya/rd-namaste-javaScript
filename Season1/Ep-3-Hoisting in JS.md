@@ -33,8 +33,6 @@
 
   ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/d07579e8-bc64-4fca-b508-92d0f37b6e42)
 
-  ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/5537c21e-ce2e-40ca-b026-176c5d338dc4)
-
   ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/094e9ec8-c8ad-49fe-a432-de9d4629ad5c)
 
  ### Example 2:
@@ -51,6 +49,8 @@
   <pre>
     Uncaught ReferenceError: x is not defined at <anonymous>:2:17
   </pre>
+
+  ### Let's remove the declaration of 'x' variable
   ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/e622855e-563c-498c-9a16-ca5e6fea3188)
 
   ### Hoisting through Arrow Function
@@ -80,19 +80,3 @@
   ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/672d72ea-ec03-4977-9315-b4545334c891)
 
   ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/c126801a-d7ea-411f-ab3a-fc9da1179b23)
-
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-When we invoke functions or variables before initializing them.
