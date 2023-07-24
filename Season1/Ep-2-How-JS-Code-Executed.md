@@ -18,7 +18,7 @@
    ###  Call Stack also known as
     ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/ad97ccfd-f537-4d89-96fc-7c5e8d87a203)
 
-   ### 2) Memory Creation Phase:
+   ### 2) Code Execution Phase:
     ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/efeaa276-a413-4190-b740-f8f9c543a568)
 
     - Once the JS code is finished then **Global Execution Context is deleted from the Call Stack**.
