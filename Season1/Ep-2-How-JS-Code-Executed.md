@@ -52,7 +52,4 @@
     4) Square function. So, nothing to do there.
     5) Square(n) is a function invocation, **for function invocation a new sub-execution context is created**.
   
-   
-
-  
-
+  ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/e2c7a930-e7bc-4748-8df7-2e39465afcf5)
