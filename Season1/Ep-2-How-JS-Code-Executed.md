@@ -34,8 +34,18 @@
 
         var square2 = square(n); //it's a function invocation and n is an argument
         var square4 = square(4); //it's a function invocation - **for function invocation a new sub-execution context is created**.
-    </pre>  
-   ### Steps:
+
+	console.log(square2);//4
+	console.log(square4);//16
+    </pre>
+
+    ### Output 1:
+    <pre>
+	4
+	16
+    </pre>
+    
+   ### Explanation:
     1) JavaScript will allocate memory to variables and functions.
     2) **Memory Creation Phase** - JS skims through the code and allocates memory like the above **phase 1** block.
     3) **Code Execution Phase** - JS skims through the code again and starts assigning values if any <pre>n=2</pre> is set.
