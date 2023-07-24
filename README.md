@@ -3,8 +3,7 @@
 My notes from namaste javaScript youtube playlist by akshay saini.
 
 # Season 1
-
-- Episode 1: Execution Context
+- [Episode 1: Execution Context](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-3-Hoisting%20in%20JS.md)
 - Episode 2: How JS is executed & Call Stack
 - Episode 3: Hoisting in JavaScript (variables & functions)
 - Episode 4: Functions and Variable Environments
