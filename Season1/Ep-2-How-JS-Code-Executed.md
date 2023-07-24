@@ -1,4 +1,4 @@
-## What happens when we run a JS Code?
+# Episode 2: How JavaScript code is executed?
 
 - An Execution Context is created while running JS Code.
 - In the Execution Context - there are 2 phases
