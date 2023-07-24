@@ -6,7 +6,7 @@ My notes from namaste javaScript youtube playlist by akshay saini.
 - [Episode 1: Execution Context](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-1-Execution-Context.md)
 - [Episode 2: How JS is executed & Call Stack](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-2-How-JS-Code-Executed.md)
 - [Episode 3: Hoisting in JavaScript (variables & functions)](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-3-Hoisting%20in%20JS.md)
-- Episode 4: Functions and Variable Environments
+- [Episode 4: How function works?](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-4-How-function-works%3F.md)
 - Episode 5: Shortest JS Program, window & this keyword
 - Episode 6: undefined vs not defined in JS
 - Episode 7: The Scope Chain, Scope & Lexical Environment
