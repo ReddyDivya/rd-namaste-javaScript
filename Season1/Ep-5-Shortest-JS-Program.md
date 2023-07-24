@@ -24,16 +24,17 @@
     var x = 10;
   }
   console.log(window.a); //10
-  console.log(a); //10
-  console.log(x);
-  
-  window.b()
+  console.log(a); //10 - even if we don't mention the window but still points to the global scope.
+
+  window.b();
 
   console.log(this.a);//10
+  console.log(x);
 </pre>
 
 ### Output 1:
 <pre>
+    10
     10
     10
     Uncaught ReferenceError: x is not defined at <anonymous>:7:15
