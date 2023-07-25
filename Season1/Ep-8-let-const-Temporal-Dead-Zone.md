@@ -70,7 +70,7 @@ For **var** variables are created in memory inside a Global Scope.
 ### We cannot re-declare let variables
 ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/474ab42e-ba78-42a5-b318-96b1fb81e7e9)
 
-## let and let the case
+## Case: let and let
 - redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
   
 ### Example 4:
@@ -85,7 +85,7 @@ For **var** variables are created in memory inside a Global Scope.
   Uncaught SyntaxError: Identifier 'a' has already been declared
 </pre>
 
-## let and var the case
+## Case: let and var
 - redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
   
 ### Example 5:
@@ -100,7 +100,7 @@ For **var** variables are created in memory inside a Global Scope.
   Uncaught SyntaxError: Identifier 'a' has already been declared
 </pre>
 
-## var and var the case
+## Case: var and var
 - In the case of var it works well.
   
 ### Example 6:
@@ -118,7 +118,12 @@ For **var** variables are created in memory inside a Global Scope.
   1000
 </pre>
 
-## const(more strict)
+## Case: const(more strict)
+
+### SyntaxError
+1) Syntactically incorrect.
+2) No duplicate declarations.
+
 ### Example 7:
 <pre>
   let a = 10;
@@ -133,12 +138,8 @@ For **var** variables are created in memory inside a Global Scope.
 </pre>
 - The code doesn't run the code. JS engine upfront the syntax error Missing initializer in const declaration.
 
-## TypeError
+### TypeError
 - Declaration and initialization should happen together. If it doesn't happen it will return Type Error.
-
-## SyntaxError
-1) Syntactically incorrect.
-2) No duplicate declarations.
 
 ### Example 8:
 <pre>
@@ -151,12 +152,34 @@ For **var** variables are created in memory inside a Global Scope.
   Uncaught TypeError: Assignment to constant variable at <anonymous>:2:5
 </pre>
 
-## ReferrenceError
+### ReferrenceError
 - When the JS engine tries to access variables inside the memory space and we can't access it Then, it gives a reference error.
 ## Preference
 - **const**
 - **let** (temporal dead zone)
 - **var** (don't use it now, use it consciously)
+
+### Example 9:
+<pre>
+  console.log(a);//ReferenceError
+  let a = 1900;//'a' is in the temporal dead zone
+</pre>
+
+### Output 9:
+<pre>
+  Uncaught ReferenceError: a is not defined at <anonymous>:1:13
+</pre>
+
+### Example 10:
+<pre>
+  console.log(x);//ReferenceError
+</pre>
+
+### Output 10:
+<pre>
+  Uncaught ReferenceError: x is not defined at <anonymous>:1:13
+</pre>
+- 'x' is some random variable that gives ReferenceError.
 
 ## How to avoid errors in the temporal dead zone?
 - We can avoid errors in the temporal dead zone by always declaring and initializations on the top of the scope.
