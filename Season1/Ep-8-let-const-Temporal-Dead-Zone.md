@@ -183,3 +183,4 @@ For **var** variables are created in memory inside a Global Scope.
 
 ## How to avoid errors in the temporal dead zone?
 - We can avoid errors in the temporal dead zone by always declaring and initializations on the top of the scope.
+- While moving declarations and initializations on the top we are shrinking the Temporal Dead Zone. So, that nothing happens(errors) before initializations.
