@@ -1,11 +1,11 @@
 # Episode 9: Block Scope and Shadowing in JavaScript
 
 ## Block
-- Block is defined by curly braces {}. Block is used to combine multiple JS statements into one group.
+- Block is defined by curly braces {}. The block is used to combine multiple JS statements into one group.
 
 ### Why block {} is required?
-- The group of multiple statements are used where JS engine expects one statement like if statement because "if" expects
-  single statements syntactically but we're using group of statements to do that we use block {}.
+- The group of multiple statements is used where the JS engine expects one statement like an if statement because "if" expects
+  single statements syntactically but we're using a group of statements to do that we use block {}.
 - Block is compulsory to have multiple statements.
 
 <pre>
@@ -218,4 +218,39 @@
   30
 </pre>
 
-## Block scope also follows lexical scope
+## Block scope also follows the lexical scope
+
+### Lexical Scope
+
+<pre>
+  //outer
+  const a = 20;
+  {
+    //inner-1
+    const a = 100;
+    {
+      //inner-2
+      const a = 200; //shadowing 'a' variable with 200. since const is a block scope.
+      console.log(a);//200 - because 'a' got shadowed
+    }
+    console.log(a);//100 - shadowing 'a' variable with 100. since const is a block scope.
+  }
+  console.log(a);//20 - global scope
+</pre>
+
+  ### Output 11:
+  <pre>
+    200
+    100
+    20
+  </pre>
+
+  ### Code Explanation
+  1) console.log(a); in inner-2 block, if 'a' variable isn't available.
+     Then, it checks 'a' in the lexical environment of its parent i.e. a=100
+  2) If 'a' is not available the inner-1 block. Then, it checks 'a' in the lexical environment of its parent i.e. outer block.
+      i.e. Global Execution Context a=20.
+
+  ## Note
+   ### Scope is same for normal functions and arrow functions
+   ### Block scope rules are the same as well.
