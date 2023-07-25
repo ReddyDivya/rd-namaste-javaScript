@@ -10,7 +10,7 @@ My notes from namaste javaScript youtube playlist by akshay saini.
 - [Episode 5: Shortest JS Program, window & this keyword](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-5-Shortest-JS-Program.md)
 - [Episode 6: undefined vs not defined in JS](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-6-Undefined-vs-Not-defined.md)
 - [Episode 7: The Scope Chain, Scope & Lexical Environment](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-7-Scope-Chain-Lexical-Environment.md)
-- [Episode 8: let & const in JS, Temporal Dead Zone](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-8-let-const.md)
+- [Episode 8: let & const in JS, Temporal Dead Zone](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-8-let-const-Temporal-Dead-Zone.md)
 - Episode 9: Block Scope & Shadowing in JS
 - Episode 10: Closure in JS
 - Episode 11: setTimeout + Closures Interview Question
