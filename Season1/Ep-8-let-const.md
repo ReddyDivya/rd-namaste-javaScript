@@ -2,6 +2,8 @@
 
 ## let & const 
 - **let & const** declaration are hoisted. We can also say, **let** is in the **Temporal Dead Zone** for the time being.
+- These variables are not attached to a window object because they reside in a different memory space.
+- We can access let and const variables after initializing values to those variables.
 
 ## Let's see the difference between **var** and **let**
 ### Example 1 - using var:
@@ -9,11 +11,19 @@
   let a = 10;
   console.log(a);//10
   var b = 100;
+  console.log(window.b);//100
+  console.log(this.b);//100
+
+  //let variables are not attached to window object
+  console.log(window.a);//undefined
+  console.log(this.a);//undefined
 </pre>
 
 ### Output 1:
 <pre>
   10
+  100
+  100
 </pre>
 
 For **var** variables are created in memory inside a Global Scope.
