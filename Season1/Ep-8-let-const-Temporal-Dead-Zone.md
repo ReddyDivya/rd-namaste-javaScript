@@ -70,10 +70,93 @@ For **var** variables are created in memory inside a Global Scope.
 ### We cannot re-declare let variables
 ![image](https://github.com/ReddyDivya/rd-namaste-javaScript/assets/34181144/474ab42e-ba78-42a5-b318-96b1fb81e7e9)
 
+## let and let the case
+- redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
+  
+### Example 4:
+<pre>
+  console.log("JavaScript");
+  let a = 10;
+  let a = 100; //redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
+</pre>
+
+### Output 4:
+<pre>
+  Uncaught SyntaxError: Identifier 'a' has already been declared
+</pre>
+
+## let and var the case
+- redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
+  
+### Example 5:
+<pre>
+  console.log("JS");
+  let a = 10;
+  var a = 100; //redeclaring for let returns a syntax error and doesn't let the JS engine run anything.
+</pre>
+
+### Output 5:
+<pre>
+  Uncaught SyntaxError: Identifier 'a' has already been declared
+</pre>
+
+## var and var the case
+- In the case of var it works well.
+  
+### Example 6:
+<pre>
+  console.log("JS");
+  let a = 10;
+  var b = 100;
+  var b = 1000;
+  console.log(b);
+</pre>
+
+### Output 6:
+<pre>
+  JS
+  1000
+</pre>
+
+## const(more strict)
+### Example 7:
+<pre>
+  let a = 10;
+  const b;
+  b = 1000;
+  console.log(b);
+</pre>
+
+### Output 7:
+<pre>
+  Uncaught SyntaxError: Missing initializer in const declaration
+</pre>
+- The code doesn't run the code. JS engine upfront the syntax error Missing initializer in const declaration.
+
+## TypeError
+- Declaration and initialization should happen together. If it doesn't happen it will return Type Error.
+
+## SyntaxError
+1) Syntactically incorrect.
+2) No duplicate declarations.
+
+### Example 8:
+<pre>
+  const b = 100;
+  b = 1000;
+</pre>
+
+### Output 8:
+<pre>
+  Uncaught TypeError: Assignment to constant variable at <anonymous>:2:5
+</pre>
+
+## ReferrenceError
+- When the JS engine tries to access variables inside the memory space and we can't access it Then, it gives a reference error.
 ## Preference
 - **const**
 - **let** (temporal dead zone)
 - **var** (don't use it now, use it consciously)
 
-## How to avoid a temporal dead zone?
-- We can avoid this by putting all declarations on top of the scope.
+## How to avoid errors in the temporal dead zone?
+- We can avoid errors in the temporal dead zone by always declaring and initializations on the top of the scope.
