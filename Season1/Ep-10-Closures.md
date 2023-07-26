@@ -1,12 +1,10 @@
 # Episode 10: Closures
-
 - The Closure is a function bundled together with its parent's lexical environment.
 <pre>
   Closure = function + lexical Scope of its parents
 </pre>
 
 ### Example 1:
-
 <pre>
   function x()
   {
@@ -16,7 +14,6 @@
        //We can access y() function's parent lexical environment i.e we can access 'a' variable of x()
        console.log(a); //7
     }//y
-
     y();
   }//x
 
@@ -24,18 +21,15 @@
 </pre>
 
 ### Output 1:
-
 <pre>
   7
 </pre>
-
-The function y() is forming a closure with parent's lexical environment i.e x()
+- The function y() is forming a closure with the parent's lexical environment i.e x()
 
 ## Return a function
 A function returns another function but they still maintain the lexical scope.
 
 ### Example 2:
-
 <pre>
   function x()
   {
@@ -71,7 +65,6 @@ A function returns another function but they still maintain the lexical scope.
 </pre>
 
 ### Output 2:
-
 <pre>
   ƒ y()
     {
@@ -83,12 +76,12 @@ A function returns another function but they still maintain the lexical scope.
 </pre>
 
 ### Example 3:
-
 <pre>
   function x(){
     //lexical scope of y()
     var a = 7; 
     function y(){
+      //local memory
       console.log(a);
     }
     a = 100; //reassigned 'a' variable
@@ -108,11 +101,9 @@ A function returns another function but they still maintain the lexical scope.
   
   100
 </pre>
-
-Because of the closure, 'z' is referring to 'a' memory which is reassigned with 100 before returning the y().
+- Because of the closure, 'z' is referring to 'a' memory which is reassigned with 100 before returning the y().
 
 ### Example 4:
-
 <pre>
   function z(){
     var b = 900;
@@ -130,8 +121,22 @@ Because of the closure, 'z' is referring to 'a' memory which is reassigned with 
   z();
 </pre>
 
+### Output 4:
+<pre>
+  7 900
+</pre>
+
 - y() forms a closure along with the 'a' variable which is its parent's lexical environment and with the variable 'b' which is its parent's parent lexical scope.
 - 'a' and 'b' variables are retained though they are removed from the call stack.
+
+## Common uses of closures
+- Module design pattern.
+- Currying is possible just because of closure.
+- Functions like once.
+- Memoize.
+- Maintaining state in async world.
+- setTimeOut
+- Iterators
 
 ## Conclusion
 Closure is a powerful concept because this remembers values even when they aren't in the call stack. This makes JavaScript very powerful.
