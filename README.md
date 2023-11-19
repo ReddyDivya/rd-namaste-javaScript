@@ -1,6 +1,6 @@
-# rd-namaste-javaScript
+# Namaste JavaScript by Akshay Saini
 
-My notes from namaste javaScript youtube playlist by akshay saini.
+Namaste JavaScript notes provide a comprehensive guide for mastering JavaScript. Covering key concepts, syntax, and practical applications, it's an invaluable resource for developers seeking JavaScript proficiency.
 
 # Season 1
 - [Episode 1: Execution Context](https://github.com/ReddyDivya/rd-namaste-javaScript/blob/main/Season1/Ep-1-Execution-Context.md)
