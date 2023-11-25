@@ -96,7 +96,7 @@ Each time its referring to different memory locations which is their individual 
 ### Why isn't working with var and working with let?
 A: Because let is a blockscope, it creates a new copy everytime when loop is executed.
 
-`Imp` ### Achieve the correct functionality with `var` only?
+### `Imp` Achieve the correct functionality with `var` only?
 A: Only closure help us, the issue was the `i` in the setTimeOut was referring to same `i` memory location. We can fix by giving new `i` copy for every loop iteration.
 We achieve by closures.
 
