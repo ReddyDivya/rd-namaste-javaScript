@@ -1,4 +1,4 @@
-# Episode 8: let and const in JS (Temporal Dead Zone)
+# Episode 8: let & const in JS, Temporal Dead Zone
 
 ## let & const 
 - **let & const** declaration are hoisted. We can also say, **let** is in the **Temporal Dead Zone** for the time being.
