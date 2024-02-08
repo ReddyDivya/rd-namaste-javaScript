@@ -68,4 +68,19 @@ console.log(x);
   above all are referencing to the same memory in the Global Execution Context.
 ```
 
+## Example 2:
+```
+var x = 10;
+console.log(x); // 10
+console.log(this.x); // 10
+console.log(window.x); // 10
+```
+
+## Output 2:
+```
+10
+10
+10
+```
+
 [Watch Demo on YouTube](https://youtu.be/gSDncyuGw0s?si=RxpHAn-U4tPVO1EB)
