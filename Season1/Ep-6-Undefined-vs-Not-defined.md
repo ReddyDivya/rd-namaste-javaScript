@@ -1,4 +1,4 @@
-# Episode 6: Undefined vs not defined in JS
+# Episode 6: undefined vs not defined in JavaScript
 
 ## Undefined
 - Undefined is a special keyword, separate memory is created too. It can be assigned with value in the later part of the code.
